@@ -1,0 +1,132 @@
+.contents {
+    float: left;
+    width: 100%;
+}
+
+.contents h1 {
+    font-size: 15px;
+    padding: 10px;
+    background-color: #333333;
+    color: rgba(255, 255, 255, 0.8) ! important;
+}
+
+.profile {
+    float: left;
+    width: 100%;
+}
+
+.profile-info {
+    float: left;
+    width: 100%;
+    padding: 10px;
+}
+
+.profile-img {
+    float: left;
+    width: 200px;
+    padding: 20px;
+    display: none;
+}
+
+.profile-img img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.profile-info h2 {
+    font-size: 20px;
+}
+
+.form-control {
+    border: none;
+    width: 100%;
+    float: left;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.form-control input,
+.form-control select {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+    border-radius: 0px ! important;
+    width: 100%;
+    padding-left: 10px;
+    background-color: transparent;
+}
+
+.form-part-footer {
+    float: left;
+    width: 100%;
+}
+
+.form-control h1 {
+    font-size: 28px;
+}
+
+.form-control h6 {
+    padding-top: 20px;
+}
+
+.form-control h5 {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.form-control button {
+    padding: 0px 15px 0px 15px;
+    color: white;
+    border: none;
+    width: 200px;
+}
+
+.input-container {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.icon {
+    padding: 10px;
+    color: black;
+    min-width: 50px;
+    text-align: center;
+    border-bottom: 1px black solid;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+
+.input-field:focus {
+    border: 2px solid dodgerblue;
+}
+
+
+/* Set a style for the submit button */
+
+.btn {
+    background-color: dodgerblue;
+    height: 50px;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.form-parts {
+    float: left;
+    width: 33%;
+    padding: 10px;
+}

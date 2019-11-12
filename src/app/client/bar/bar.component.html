@@ -1,0 +1,77 @@
+<div class="header">
+    <img src="../../../assets/logo.jpg">
+    <h1>Dashboard</h1>
+</div>
+<div class="haeder-details">
+    <h1>Welcome to <code>Shuri</code></h1>
+    <p>Allows you to track your API calls and account information</p>
+</div>
+<div class="contents">
+    <div class="fac-reg">
+        <h1>Facial Recognition API Summary </h1>
+        <div class="fac-reg-left">
+            <div style="display: block;">
+                <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [plugins]="barChartPlugins" [legend]="barChartLegend" [chartType]="barChartType">
+                </canvas>
+            </div>
+        </div>
+        <div class="fac-reg-right">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Feedback</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Type</th>
+                        <th scope="col">Code</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let country of countries; index as i">
+                        <th scope="row">{{ i + 1 }}</th>
+                        <td>
+                            <img [src]="'https://upload.wikimedia.org/wikipedia/commons/' + country.flag" class="mr-2" style="width: 20px"> {{ country.name }}
+                        </td>
+                        <td>{{ country.date }}</td>
+                        <td>{{ country.type }}</td>
+                        <td>{{ country.code }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <hr />
+    <div class="fac-reg">
+        <h1>Voice Recognition API summary</h1>
+        <div class="fac-reg-left">
+            <div style="display: block;">
+                <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [plugins]="barChartPlugins" [legend]="barChartLegend" [chartType]="barChartType">
+                </canvas>
+            </div>
+        </div>
+        <div class="fac-reg-right">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Feedback</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Type</th>
+                        <th scope="col">Code</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let country of countries; index as i">
+                        <th scope="row">{{ i + 1 }}</th>
+                        <td>
+                            <img [src]="'https://upload.wikimedia.org/wikipedia/commons/' + country.flag" class="mr-2" style="width: 20px"> {{ country.name }}
+                        </td>
+                        <td>{{ country.date }}</td>
+                        <td>{{ country.type }}</td>
+                        <td>{{ country.code }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

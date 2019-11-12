@@ -1,0 +1,20 @@
+.nav-container {
+    float: left;
+    width: 100%;
+}
+
+.logout {
+    float: left;
+    width: 200px;
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+    z-index: 9999;
+    background-color: rgb(72, 163, 163) ! important;
+}
+
+.logout h1 {
+    font-size: 15px;
+    color: white;
+    text-transform: uppercase;
+}

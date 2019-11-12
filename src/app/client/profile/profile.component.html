@@ -1,0 +1,51 @@
+<div class="contents">
+    <h1>Account</h1>
+    <div class="profile">
+        <div class="profile-info">
+            <div class="profile-img">
+                <img src="../../../assets/profile.png">
+            </div>
+        </div>
+        <div class="profile-info">
+            <h2>Welcome, Tyson Mot</h2>
+            <p>Manage your info to make Shuri Portal work better for you </p>
+            <form class="form-control">
+                <div class="form-parts">
+
+                    <div class="input-container">
+                        <i class="fa fa-envelope icon"></i>
+                        <input class="input-field" type="text" placeholder="Email" name="email" [(ngModel)]="profile.alterEmail">
+                    </div>
+
+                </div>
+
+                <div class="form-parts">
+
+                    <div class="input-container">
+                        <i class="fa fa-user-circle-o icon"></i>
+                        <input class="input-field" type="text" placeholder="First Name" name="usrnm" [(ngModel)]="profile.name">
+                    </div>
+
+                    <div class="input-container">
+                        <i class="fa fa-user-plus icon"></i>
+                        <input class="input-field" type="text" placeholder="Last Name" name="email" [(ngModel)]="profile.surname">
+                    </div>
+
+                    <div class="input-container">
+                        <i class="fa fa-address-book-o icon"></i>
+                        <input class="input-field" type="tel" placeholder="Phone" name="psw" [(ngModel)]="profile.phoneNumber">
+                    </div>
+                </div>
+                <div class="form-parts">
+
+                    <div class="input-container">
+                        <i class="fa fa-building-o icon"></i>
+                        <input class="input-field" type="text" placeholder="Organisation Name" name="psw" [(ngModel)]="profile.organization">
+                    </div>
+                </div>
+                <div class="form-part-footer">
+                    <button type="submit" class="btn" (click)="update()">Update Changes</button>
+                </div>
+            </form>
+        </div>
+    </div>

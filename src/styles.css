@@ -1,0 +1,45 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.nav {
+    background-color: #333333;
+    display: block;
+    width: 200px;
+    float: left;
+    height: 100vh;
+    border: none ! important;
+    padding-top: 50px;
+    position: fixed;
+}
+
+.tab-content {
+    float: left;
+    width: calc(100% - 200px);
+    border: none ! important;
+    margin-left: 200px;
+}
+
+.nav-tabs .nav-link.active {
+    color: rgb(72, 163, 163) ! important;
+    background-color: rgba(51, 51, 51, 0.7);
+    border: 1px rgb(72, 163, 163) solid;
+}
+
+.nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+a {
+    color: rgba(255, 255, 255, 0.8) ! important;
+}

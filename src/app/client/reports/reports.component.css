@@ -1,0 +1,41 @@
+.contents {
+    float: left;
+    width: 100%;
+}
+
+.contents h1 {
+    font-size: 15px;
+    padding: 10px;
+    background-color: #333333;
+    color: rgba(255, 255, 255, 0.8) ! important;
+}
+
+.keys {
+    width: 100%;
+    padding: 10px;
+    float: left;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 4px;
+    font-size: 12px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+button {
+    border: none;
+    background-color: #e07070;
+    color: white;
+}

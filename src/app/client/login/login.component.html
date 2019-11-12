@@ -1,0 +1,17 @@
+<div class="contain">
+    <form class="form-control">
+        <img src="../../../assets/logo.jpg">
+        <h1>Welcome Back</h1>
+        <h5>Sign in with your Shuri ID</h5>
+        <div class="input-container">
+            <i class="fa fa-user icon"></i>
+            <input class="input-field" type="text" placeholder="Enter a Shuri ID" name="usrnm" autofocus [(ngModel)]="login.email">
+        </div>
+        <div class="input-container">
+            <i class="fa fa-key icon"></i>
+            <input class="input-field" type="password" placeholder="Password" name="psw" [(ngModel)]="login.password">
+        </div>
+        <button type="submit" class="btn"  (click)="loginUser()">Login</button>
+        <p>Forgot Password? | <span [routerLink]="['/register']">Sign Up</span></p>
+    </form>
+</div>
